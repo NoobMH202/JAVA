@@ -1,0 +1,16 @@
+import random
+myNum = random.randint(1,100);
+
+userNum = int(input("enter your number between 1-100: "))
+for i in range (5):
+    if (userNum == myNum):
+        print("Congratulations!!!... you guessed the correct number, successfully")
+        break
+    elif (userNum > myNum):
+        userNum = int(input("too large! enter a small number: "))
+
+    else:
+        userNum = int(input("too small! enter a large number: "))
+        
+print("you are not allowed to try more than 5 times")
+print("correct number was: ", myNum)
